@@ -7,7 +7,7 @@ if($ENV{'QUERY_STRING'} eq "") {
   print "<input type=\"text\" name=\"mes\">";
   print "<input type=\"submit\" value\"Buscar\" />";
 }else {
-  open F, "/tmp/calendario";
+  open F, "/var/calendario.txt";
   while(<F>) {
     chomp;
      @mes=split(":");
